@@ -1,0 +1,13 @@
+### 获取可用的短信供应商
+GET http://127.0.0.1:23301/cloud/sms/provider/actives
+
+### 创建供应商模板
+POST http://127.0.0.1:23301/cloud/sms/provider/template/create
+Content-Type: application/json
+
+{
+  "templateId": 318011293137108992,
+  "providerCode": "ali_yun",
+  "providerTemplate": "SMS_201125008",
+  "content": "验证码${code}，您正在进行身份验证，打死不要告诉别人哦！"
+}

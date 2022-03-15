@@ -1,0 +1,47 @@
+### 发送短信
+POST http://127.0.0.1:23301/cloud/sms/send
+Content-Type: application/json
+
+{
+  "templateCode": "SMS_CODE",
+  "mobiles": [
+    "18256928780"
+  ],
+  "params": {
+    "code": "1234"
+  }
+}
+
+### 批量发送
+POST http://127.0.0.1:23301/cloud/sms/send/batch
+Content-Type: application/json
+
+[
+  {
+    "templateCode": "SMS_CODE",
+    "mobiles": [
+      "18256928780"
+    ],
+    "params": {
+      "code": "1234"
+    }
+  },
+  {
+    "templateCode": "SMS_CODE1",
+    "mobiles": [
+      "18256928780"
+    ],
+    "params": {
+      "code": "2234"
+    }
+  },
+  {
+    "templateCode": "SMS_CODE2",
+    "mobiles": [
+      "18256928780"
+    ],
+    "params": {
+      "code": "2234"
+    }
+  }
+]

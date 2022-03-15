@@ -1,0 +1,30 @@
+### 新增短信模板
+POST http://127.0.0.1:23301/cloud/sms/template/create
+Content-Type: application/json
+
+{
+  "code": "SMS_CODE",
+  "name": "短信验证码",
+  "description": "短信验证码",
+  "params": [
+    {
+      "param": "code",
+      "description": "验证码值"
+    }
+  ]
+}
+
+### 更新短信模板
+POST http://127.0.0.1:23301/cloud/sms/template/update?id=318011293137108992
+
+### 查询模板列表
+POST http://127.0.0.1:23301/cloud/sms/template/query
+Content-Type: application/json
+
+{
+  "paging": {
+    "pageNumber": 1,
+    "pageSize": 10
+  },
+  "code": "SMS"
+}
