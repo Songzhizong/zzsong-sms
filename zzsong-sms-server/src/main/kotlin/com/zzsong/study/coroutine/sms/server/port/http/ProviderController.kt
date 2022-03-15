@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*
  * @author 宋志宗 on 2022/1/28
  */
 @RestController
-@RequestMapping("/cloud/sms/provider")
+@RequestMapping("/sms/provider")
 class ProviderController(private val providerService: ProviderService) {
 
   /**

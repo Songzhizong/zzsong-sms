@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController
  * @author 宋志宗 on 2022/1/27
  */
 @RestController
-@RequestMapping("/cloud/sms")
+@RequestMapping("/sms")
 class SmsController(private val smsService: SmsService) {
 
   /**

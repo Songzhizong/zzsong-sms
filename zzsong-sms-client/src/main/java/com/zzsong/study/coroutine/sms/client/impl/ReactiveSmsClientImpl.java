@@ -38,7 +38,7 @@ public class ReactiveSmsClientImpl implements ReactiveSmsClient {
   @Nonnull
   @Override
   public Mono<Long> send(@Nonnull SendSmsArgs args) {
-    String url = baseUrl + "/cloud/sms/send";
+    String url = baseUrl + "/sms/send";
     return webClient.post().uri(url)
       .contentType(MediaType.APPLICATION_JSON)
       .body(BodyInserters.fromValue(args))
@@ -50,7 +50,7 @@ public class ReactiveSmsClientImpl implements ReactiveSmsClient {
   @Nonnull
   @Override
   public Mono<Long> send(@Nonnull Collection<SendSmsArgs> argsList) {
-    String url = baseUrl + "/cloud/sms/send/batch";
+    String url = baseUrl + "/sms/send/batch";
     return webClient.post().uri(url)
       .contentType(MediaType.APPLICATION_JSON)
       .body(BodyInserters.fromValue(argsList))

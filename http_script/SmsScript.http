@@ -1,5 +1,5 @@
 ### 发送短信
-POST http://127.0.0.1:23301/cloud/sms/send
+POST http://127.0.0.1:23301/sms/send
 Content-Type: application/json
 
 {
@@ -13,7 +13,7 @@ Content-Type: application/json
 }
 
 ### 批量发送
-POST http://127.0.0.1:23301/cloud/sms/send/batch
+POST http://127.0.0.1:23301/sms/send/batch
 Content-Type: application/json
 
 [

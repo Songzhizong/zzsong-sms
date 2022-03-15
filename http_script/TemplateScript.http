@@ -1,5 +1,5 @@
 ### 新增短信模板
-POST http://127.0.0.1:23301/cloud/sms/template/create
+POST http://127.0.0.1:23301/sms/template/create
 Content-Type: application/json
 
 {
@@ -15,10 +15,10 @@ Content-Type: application/json
 }
 
 ### 更新短信模板
-POST http://127.0.0.1:23301/cloud/sms/template/update?id=318011293137108992
+POST http://127.0.0.1:23301/sms/template/update?id=318011293137108992
 
 ### 查询模板列表
-POST http://127.0.0.1:23301/cloud/sms/template/query
+POST http://127.0.0.1:23301/sms/template/query
 Content-Type: application/json
 
 {

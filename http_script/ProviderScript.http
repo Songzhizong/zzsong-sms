@@ -1,8 +1,8 @@
 ### 获取可用的短信供应商
-GET http://127.0.0.1:23301/cloud/sms/provider/actives
+GET http://127.0.0.1:23301/sms/provider/actives
 
 ### 创建供应商模板
-POST http://127.0.0.1:23301/cloud/sms/provider/template/create
+POST http://127.0.0.1:23301/sms/provider/template/create
 Content-Type: application/json
 
 {
